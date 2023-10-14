@@ -7,6 +7,7 @@ import ColorToggle from '../containers/ColorToggle';
 import Matrix from '../containers/Matrix';
 import Keyboard from '../containers/Keyboard';
 import Decoration from '../components/Decoration';
+import AppLogo from '../components/AppLogo';
 import HiScore from '../components/HiScore';
 import Point from '../components/Point';
 import Number from '../components/Number';
@@ -147,6 +148,7 @@ class App extends React.Component {
               reset={this.props.reset}
               colorToggle={this.props.colorToggle}
             />
+            <AppLogo current={!!this.props.current} reset={this.props.reset}></AppLogo>
             <HiScore current={!!this.props.current} reset={this.props.reset} max={this.props.max} />
             <State>
               <Point current={!!this.props.current} max={this.props.max} points={this.props.points} />

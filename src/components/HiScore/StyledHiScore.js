@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`
    position: absolute;
-   top: 165px;
+   top: 129px;
    left: 12px;
    width: 224px;
    height: 90px;
